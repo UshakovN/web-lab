@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <title>ЛР-8</title>
+</head>
+<body>
+<div class="container task_container">
+  <div class="header">
+    <div class="task_header">
+      <div class="task_div">
+        <h3>Лабораторная работа 8</h3>
+      </div>
+      <p>Разработка страниц с сегментированной графикой,
+        анимированной графикой и мультимедиа
+      </p>
+      <strong>
+        Задание:
+      </strong>
+      <ol class="task_ol">
+        <li>
+          Добавить на одну из страниц карту изображений с несколькими ссылками, используя теги
+          <b>map</b> и <b>area</b>.
+        </li>
+        <li>
+          Добавить на одну из страниц карту изображений, содержащую области,
+          показанные в задании в п.3.1. Вариант: 20 mod 18 = 2.
+        </li>
+        <li>
+          Реализовать дубликат карты изображения с применением CSS и без применения тегов
+          <b>map</b> и <b>area</b>.
+        </li>
+        <li>
+          Разработать и включить на одну из созданных ранее страниц gif-анимацию.
+        </li>
+        <li>
+          Включить на страницу звуковой файл.
+        </li>
+        <li>
+          Включить на страницу видеоролик.
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="task">
+    <ul>
+      <li>
+        <p>Добавить на одну из страниц карту изображений с несколькими ссылками,
+          используя теги <b>map </b> и <b>area</b>.</p>
+        <!--image was resized for correctly coordinate mapping-->
+        <img src="../img/device.png" alt="old device" usemap="#device_map">
+        <map name="device_map">
+          <area shape="rect"
+                coords="154,123,291,236"
+                title="monitor"
+                alt="monitor"
+                href="https://en.wikipedia.org/wiki/Computer_monitor"
+                target="_blank"
+          >
+          <area shape="poly"
+                coords="100,319,45,338,44,350,237,349,291,335,292,323"
+                title="keyboard"
+                alt="keyboard"
+                href="https://en.wikipedia.org/wiki/Computer_keyboard"
+                target="_blank"
+          >
+          <area shape="poly"
+                coords="122,266,311,266,400,266,402,310,313,306,122,302"
+                title="pc"
+                alt="pc"
+                href="https://en.wikipedia.org/wiki/Personal_computer"
+                target="_blank"
+          >
+          <area shape="poly"
+                coords="258,373,259,361,311,344,353,343,354,356,300,372"
+                title="mouse"
+                alt="mouse"
+                href="https://en.wikipedia.org/wiki/Computer_mouse"
+                target="_blank"
+          >
+        </map>
+      </li>
+      <li>
+        <p>Добавить на одну из страниц карту изображений, содержащую области, показанные в задании в п.3.1.</p>
+        <img src="../img/figure.svg" alt="animated pic" usemap="#figure_map">
+        <map name="figure_map">
+          <area shape="circle"
+                coords="138,132,57"
+                title="circle"
+                alt="circle"
+                href="https://en.wikipedia.org/wiki/A_Perfect_Circle"
+                target="_blank"
+          >
+          <area shape="rect"
+                coords="8,13,204,202"
+                title="rectangle"
+                alt="rectangle"
+                href="https://rectangleapp.com/"
+                target="_blank"
+          >
+        </map>
+      </li>
+      <li>
+        <p>Реализовать дубликат карты изображения с применением CSS и без применения тегов
+          <b>map</b> и <b>area</b>.</p>
+        <div class="task_rect_border">
+          <a class="task_rect"
+             href="https://rectangleapp.com/"
+             target="_blank">
+            <a class="task_circle"
+               href="https://en.wikipedia.org/wiki/A_Perfect_Circle"
+               target="_blank">
+            </a>
+          </a>
+        </div>
+      </li>
+      <li>
+        <p>Разработать и включить на одну из созданных ранее страниц gif-анимацию.</p>
+        <img src="../img/animation.gif"
+             style="width: 20rem"
+             title="serial experiments lain: main character"
+             alt="animated pic">
+      </li>
+      <li>
+        <p>Включить на страницу звуковой файл.</p>
+        <audio src="../media/theme.mp3"
+               title="soldiers of fortune 2: double helix - main theme"
+               controls preload="metadata"></audio>
+      </li>
+      <li>
+        <p>Включить на страницу видеоролик.</p>
+        <video src="../media/sample.mp4"
+               title="blue light: special guest - yung lean"
+               controls></video>
+      </li>
+    </ul>
+  </div>
+</div>
+<footer>
+  <div class="footer_wrap task_div footer_tap">
+    <a href="../index.html">Главная страница</a>
+  </div>
+</footer>
+</body>
+</html>
